@@ -1,3 +1,5 @@
+
+  
 services:
   - type: web
     name: app-votacao
@@ -10,5 +12,11 @@ services:
         value: votacao.settings
       - key: PYTHON_VERSION
         value: 3.11
-
-
+      - key: DEBUG
+        value: False
+      - key: ALLOWED_HOSTS
+        value: app-votacao.onrender.com
+      - key: SECRET_KEY
+        value: coloque_uma_chave_secreta_aqui
+      - key: DATABASE_URL
+        value: postgres://appvotar_user:ao7COfvSFOOF7CCI84klkQ2J647VzAuG@dpg-d0b4r7adbo4c73ce31d0-a:5432/appvotar
